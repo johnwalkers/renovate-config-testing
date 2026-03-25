@@ -4,7 +4,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["\\.github/workflows/.+\\.ya?ml$"],
+      "managerFilePatterns": [
+        "/\.github/workflows/.+\.ya?ml$/"
+      ],
       "matchStringsStrategy": "combination",
       "matchStrings": [
         "lambda-repository:\\s*['\"]?(?<depName>[^'\"\\s]+)['\"]?",
