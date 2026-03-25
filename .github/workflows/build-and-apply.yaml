@@ -1,0 +1,12 @@
+name: build-and-apply.yaml
+on:
+  workflow_dispatch:
+
+jobs:
+  call-build-and-apply:
+    uses: fooo
+    with:
+      lambda-repository: 'johnwalkers/build-and-apply-test'
+      lambda-code-path: "code-for-lambdas/"
+      mooo: boo
+      lambda-repository-branch: v2.3.80
